@@ -28,3 +28,5 @@ notifications:
  - szekelybalint96@gmail.com
  on_success: always
  on_failure: always
+script:
+  - ./gradlew build
