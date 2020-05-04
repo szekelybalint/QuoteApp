@@ -2,21 +2,21 @@ package aut.bme.hu.quoteapp.model;
 
 public class Quote {
     public String getAuthor() {
-        return Author;
+        return QuoteAuthor;
     }
 
-    public void setAuthor(String author) {
-        Author = author;
+    public void setQuoteAuthor(String author) {
+        QuoteAuthor = author;
     }
 
-    public String getText() {
-        return Text;
+    public String getQuoteText() {
+        return QuoteText;
     }
 
-    public void setText(String text) {
-        Text = text;
+    public void setQuoteText(String text) {
+        QuoteText = text;
     }
 
-    private String Author;
-    private String Text;
+    private String QuoteAuthor;
+    private String QuoteText;
 }
