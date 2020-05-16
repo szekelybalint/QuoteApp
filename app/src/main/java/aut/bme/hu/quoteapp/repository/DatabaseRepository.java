@@ -22,7 +22,8 @@ public class DatabaseRepository {
 
     private QuoteDatabase quoteDatabase;
 
-    public DatabaseRepository(){
+    @Inject
+    public DatabaseRepository(Context context){
         quoteDatabase = Room.databaseBuilder(context, QuoteDatabase.class, "db_quotes").build();
     }
 

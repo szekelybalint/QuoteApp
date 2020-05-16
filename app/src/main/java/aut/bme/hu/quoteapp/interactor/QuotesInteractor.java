@@ -1,5 +1,6 @@
 package aut.bme.hu.quoteapp.interactor;
 
+import android.os.AsyncTask;
 import android.renderscript.ScriptIntrinsicYuvToRGB;
 
 import java.io.IOException;
@@ -24,4 +25,5 @@ public class QuotesInteractor {
         Call<QuotesResult> getQuotesCall = quoteApi.getQuotes();
         return  getQuotesCall.execute().body();
     }
+
 }

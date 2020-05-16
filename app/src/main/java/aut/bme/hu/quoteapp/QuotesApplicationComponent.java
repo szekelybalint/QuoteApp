@@ -1,9 +1,12 @@
 package aut.bme.hu.quoteapp;
 import javax.inject.Singleton;
 
+import aut.bme.hu.quoteapp.repository.DatabaseRepository;
+import aut.bme.hu.quoteapp.repository.RepositoryModule;
 import aut.bme.hu.quoteapp.ui.favoriteList.FavoriteListActivity;
 import aut.bme.hu.quoteapp.ui.favoriteList.FavoriteListPresenter;
 import aut.bme.hu.quoteapp.ui.favoriteList.FavoriteListScreen;
+import aut.bme.hu.quoteapp.ui.quoteList.QuoteListAdapter;
 import dagger.Component;
 import aut.bme.hu.quoteapp.interactor.QuotesInteractor;
 import aut.bme.hu.quoteapp.network.NetworkModule;
@@ -14,9 +17,11 @@ import aut.bme.hu.quoteapp.ui.quoteList.QuoteListScreen;
 
 
 @Singleton
-@Component(modules = {UIModule.class, NetworkModule.class})
+@Component(modules = {UIModule.class, NetworkModule.class, RepositoryModule.class})
 public interface QuotesApplicationComponent {
     void inject(MainActivity mainActivity);
+
+    void inject(QuoteListAdapter quoteListAdapter);
 
     void inject(QuoteListScreen quoteListScreen);
 
