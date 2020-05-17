@@ -8,6 +8,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface QuoteApi {
-    @GET("5ebebf4f3100004c00c5d567")
+    @GET("5ec1a2f12f00000e00c34d87")
     Call<QuotesResult> getQuotes();
 }
