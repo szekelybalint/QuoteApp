@@ -1,7 +1,6 @@
 package aut.bme.hu.quoteapp;
 import javax.inject.Singleton;
 
-import aut.bme.hu.quoteapp.repository.DatabaseRepository;
 import aut.bme.hu.quoteapp.repository.RepositoryModule;
 import aut.bme.hu.quoteapp.ui.favoriteList.FavoriteListActivity;
 import aut.bme.hu.quoteapp.ui.favoriteList.FavoriteListPresenter;
@@ -11,7 +10,6 @@ import dagger.Component;
 import aut.bme.hu.quoteapp.interactor.QuotesInteractor;
 import aut.bme.hu.quoteapp.network.NetworkModule;
 import aut.bme.hu.quoteapp.ui.UIModule;
-import aut.bme.hu.quoteapp.ui.quoteList.QuoteListActivity;
 import aut.bme.hu.quoteapp.ui.quoteList.QuoteListPresenter;
 import aut.bme.hu.quoteapp.ui.quoteList.QuoteListScreen;
 

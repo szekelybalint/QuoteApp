@@ -27,7 +27,7 @@ import aut.bme.hu.quoteapp.ui.quoteList.QuoteListScreen;
 public class FavoriteListActivity extends AppCompatActivity implements FavoriteListScreen {
 
     @Inject
-    FavoriteListPresenter presenter;
+    public FavoriteListPresenter presenter;
 
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;

@@ -60,6 +60,7 @@ public class QuoteListPresenter extends Presenter<QuoteListScreen> {
             Quote quote = new Quote();
             quote.setQuoteAuthor(q.getAuthor());
             quote.setQuoteText(q.getText());
+            quoteList.add(quote);
         }
 
         screen.showQuotes(quoteList);

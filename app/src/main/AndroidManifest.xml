@@ -15,11 +15,16 @@
         android:usesCleartextTraffic="true">
         <activity
             android:parentActivityName=".MainActivity"
+            android:label="Details"
             android:name=".ui.details.DetailsActivity"></activity>
         <activity
             android:parentActivityName=".MainActivity"
+            android:label="Favorites"
             android:name=".ui.favoriteList.FavoriteListActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="Quotes">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

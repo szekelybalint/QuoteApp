@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements QuoteListScreen {
 
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
-    private RecyclerView.Adapter adapter;
+    public RecyclerView.Adapter adapter;
 
     List<Quote> quotes = new ArrayList<Quote>();
 
