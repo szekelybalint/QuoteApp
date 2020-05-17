@@ -17,6 +17,8 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
+        getSupportActionBar().setHomeButtonEnabled(true);
+
         textTv = findViewById(R.id.textTv);
         authorTv = findViewById(R.id.authorTv);
     }

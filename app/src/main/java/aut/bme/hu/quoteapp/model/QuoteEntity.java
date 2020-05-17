@@ -3,6 +3,8 @@ package aut.bme.hu.quoteapp.model;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import javax.annotation.Generated;
+
 @Entity
 public class QuoteEntity {
     public QuoteEntity(){}
@@ -15,7 +17,7 @@ public class QuoteEntity {
         Id = id;
     }
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     private int Id;
 
     public String getAuthor() {

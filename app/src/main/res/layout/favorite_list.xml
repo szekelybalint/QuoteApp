@@ -7,23 +7,10 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recView"
+        android:id="@+id/favRecView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="162dp" />
-
-    <Button
-        android:id="@+id/bSeeFavs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@android:color/transparent"
-        android:padding="16dp"
-        android:text="See favorites"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="favoriteClicked"
-        android:textSize="12sp" />
 
 </RelativeLayout>
